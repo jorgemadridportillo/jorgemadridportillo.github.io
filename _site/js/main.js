@@ -45,7 +45,16 @@ $(function() {
           var page = window.location.hash.substring(1);
           $.get('../content/' + page + '.html', loaded);   
     });
-   
+
+    $(".nav-link").on("click", function(){
+       $(".navbar-fixed-top").find(".active_link").removeClass("active_link");
+       $(this).addClass("active_link");
+    });
+
+    $(".main").on("click", function(){
+       $(".navbar-fixed-top").find(".active_link").removeClass("active_link");
+    });
+
     $.fn.loadPage = loadPage;
 
     /*$('#portfolio').on('click', function() {

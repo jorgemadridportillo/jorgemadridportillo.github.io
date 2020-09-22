@@ -9,33 +9,172 @@
 
 body, html {
     height: 100%;
+	font-family: 'Nanum Gothic', sans-serif;
 }
 
-@media (min-width: 768px) {
-    aside {
-        height: 100%;
-    }
+.main {
+	color: rgba(255,255,255) !important;
+}
+
+@media (min-width: 992px) {
 
 	aside nav {
-		top: 30%;
+		margin-top: 100%;
+		margin-left: 10px;
 	}
 
 	aside nav ul li a {
-		font-size: 150%;
+		font-size: 160%;
+		color: rgba(255,255,255, .6) !important;
+	}
+
+	aside nav ul li a:hover {
+		color: rgba(255,255,255, .9) !important;
+	}
+
+	.active_link {
+		color: rgba(255,255,255, .9) !important;
+	}
+
+	aside {
+		background-image:url('../img/navbar_2.jpg');
+		background-repeat:no-repeat;
+		background-position:top right;
+		background-size: 250%;
+		height: 100%;
+
+		-webkit-box-shadow: 5px 0px 11px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 0px 11px 0px rgba(0,0,0,0.75);
+		box-shadow: 5px 0px 11px 0px rgba(0,0,0,0.75);
+
+		padding-left: 5px !important;
+	}
+
+	.social-circle li a {
+		display:inline-block;
+		position:relative;
+		margin:0 auto 0 auto;
+		-moz-border-radius:50%;
+		-webkit-border-radius:50%;
+		border-radius:50%;
+		text-align:center;
+		width: 50px;
+		height: 50px;
+		font-size:20px;
+		background-color: #D3D3D3;
+	}
+	.social-circle li i {
+		margin:0;
+		line-height:50px;
+		text-align: center;
 	}
 }
 
-@media (max-width: 980px) {
-  body {
-    padding-top: 125px;
-  }
+@media (max-width: 768px) {
+	aside nav ul li a {
+		font-size: 130%;
+		color: rgba(255,255,255, .8) !important;
+	}
+
+	aside nav ul {
+		padding-left: 3% !important;
+		padding-right: 3%;	
+	}
+
+	aside nav ul li a:hover {
+		color: rgba(255,255,255, .99) !important;
+	}
+
+	.active_link {
+		color: rgba(255,255,255, .99) !important;
+	}
+
+	aside {
+		background-image:url('../img/navbar_2.jpg');
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size: 150%;
+	}
+
+	.social-circle li a {
+		display:inline-block;
+		position:relative;
+		margin:0 auto 0 auto;
+		-moz-border-radius:50%;
+		-webkit-border-radius:50%;
+		border-radius:50%;
+		text-align:center;
+		width: 35px;
+		height: 35px;
+		font-size:20px;
+		background-color: #D3D3D3;
+	}
+	.social-circle li i {
+		margin:0;
+		line-height: 30px;
+		text-align: center;
+	}
+
+		body {
+		padding-top: 125px;
+	  }
 }
 
-aside {
-	background-image:url('../img/navbar.jpg');
-	background-repeat:no-repeat;
-	background-position:top right;
-	background-size: 250%;
+@media (max-width: 992px) {
+
+	body {
+		padding-top: 175px;
+	}
+
+	aside nav ul li a {
+		font-size: 250%;
+		color: rgba(255,255,255, .8) !important;
+	}
+
+	aside nav ul {
+		padding-left: 3% !important;
+		padding-right: 3%;	
+	}
+
+	aside nav ul li a:hover {
+		color: rgba(255,255,255, .99) !important;
+	}
+
+	.active_link {
+		color: rgba(255,255,255, .99) !important;
+	}
+
+	aside {
+		background-image:url('../img/navbar_2.jpg');
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size: 150%;
+		
+		-webkit-box-shadow: 0px 8px 5px -4px rgba(0,0,0,0.65);
+		-moz-box-shadow: 0px 8px 5px -4px rgba(0,0,0,0.65);
+		box-shadow: 0px 8px 5px -4px rgba(0,0,0,0.65);
+		padding-bottom: 10px !important;
+	}
+
+	.social-circle li a {
+		display:inline-block;
+		position:relative;
+		margin:0 auto 0 auto;
+		-moz-border-radius:50%;
+		-webkit-border-radius:50%;
+		border-radius:50%;
+		text-align:center;
+		width: 65px;
+		height: 65px;
+		font-size:30px;
+		background-color: #D3D3D3;
+	}
+
+	.social-circle li i {
+		margin:0;
+		line-height: 60px;
+		text-align: center;
+	}
 }
 
 .video {
@@ -76,6 +215,7 @@ aside {
 
 .img-grid {
     max-width: 100%;
+	width: 100%;
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -89,23 +229,6 @@ aside {
 #content.active {
   width: 100%;
   margin: 0;
-}
-
-@media (max-width: 768px) {
-  #sidebar {
-    margin-left: -17rem;
-  }
-  #sidebar.active {
-    margin-left: 0;
-  }
-  #content {
-    width: 100%;
-    margin: 0;
-  }
-  #content.active {
-    margin-left: 17rem;
-    width: calc(100% - 17rem);
-  }
 }
 
 /*
@@ -177,24 +300,7 @@ a.socialIcon:hover, .socialHoverClass {
 	color:#44BCDD;
 }
 
-.social-circle li a {
-	display:inline-block;
-	position:relative;
-	margin:0 auto 0 auto;
-	-moz-border-radius:50%;
-	-webkit-border-radius:50%;
-	border-radius:50%;
-	text-align:center;
-	width: 50px;
-	height: 50px;
-	font-size:20px;
-	background-color: #D3D3D3;
-}
-.social-circle li i {
-	margin:0;
-	line-height:50px;
-	text-align: center;
-}
+
 
 /*.social-circle li a:hover i, .triggeredHover {
 	-moz-transform: rotate(360deg);
