@@ -27,7 +27,7 @@ $(function() {
 
     function loaded(data) {
         $('#content').fadeTo(400, 0, function(){ 
-            $(this).html(button + data).fadeTo(400, 1);
+            $(this).html(data).fadeTo(400, 1);
                 // Sidebar toggle behavior
             $('#sidebarCollapse').on('click', function() {
                 $('#sidebar, #content').toggleClass('active');
