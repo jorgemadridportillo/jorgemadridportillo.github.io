@@ -153,7 +153,7 @@ background-image: url("https://www.transparenttextures.com/patterns/grunge-wall.
 		background-image:url('../img/navbar_2.jpg');
 		background-repeat:no-repeat;
 		background-position:center;
-		background-size: 150%;
+		background-position: 47% 10%;
 
 		-webkit-box-shadow: 0px 8px 5px -4px rgba(0,0,0,0.65);
 		-moz-box-shadow: 0px 8px 5px -4px rgba(0,0,0,0.65);
@@ -262,7 +262,7 @@ background-image: url("https://www.transparenttextures.com/patterns/grunge-wall.
 	aside {
 		background-image:url('../img/navbar_2.jpg');
 		background-repeat:no-repeat;
-		background-position:center;
+		background-position: 47% 10%;
 		background-size: 150%;
 		
 		-webkit-box-shadow: 0px 8px 5px -4px rgba(0,0,0,0.65);
