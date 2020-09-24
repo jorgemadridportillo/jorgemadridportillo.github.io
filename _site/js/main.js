@@ -49,6 +49,7 @@ $(function() {
     $(".nav-link").on("click", function(){
        $(".navbar-fixed-top").find(".active_link").removeClass("active_link");
        $(this).addClass("active_link");
+       console.log('asdf');
     });
 
     $(".main").on("click", function(){

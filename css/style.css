@@ -10,11 +10,17 @@
 body, html {
     height: 100%;
 	font-family: 'Nanum Gothic', sans-serif;
-	
+background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/grunge-wall.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .main {
-	color: rgba(255,255,255) !important;
+	color: rgba(255,255,255, .8) !important;
+}
+
+.main:hover {
+	color: rgba(255,255,255, .9) !important;
 }
 
 
@@ -79,6 +85,10 @@ body, html {
 
 	.larger {
 		font-size: 140%;
+	}
+
+	.larger-2 {
+		font-size: 120%;
 	}
 
 	.player-holder{
@@ -325,6 +335,9 @@ body, html {
     height: 60%;
     margin: auto;
     margin-bottom: 15px;
+		box-shadow: 6px 6px 3px #ccc;
+    -webkit-box-shadow: 6px 6px 3px #ccc;
+    -moz-box-shadow: 6px 6px 3px #ccc;
 }
 
 .video-responsive {
@@ -333,6 +346,9 @@ body, html {
     padding-bottom: 56.25%;
     /*padding-top: 30px;*/
     position: relative;
+		box-shadow: 6px 6px 3px #ccc;
+    -webkit-box-shadow: 6px 6px 3px #ccc;
+    -moz-box-shadow: 6px 6px 3px #ccc;
 	
 }
 .video-responsive iframe, .video-responsive object, .video-responsive embed {
@@ -362,6 +378,9 @@ body, html {
 	width: 100%;
     margin-bottom: 15px;
     cursor: pointer;
+	box-shadow: 6px 6px 3px #ccc;
+    -webkit-box-shadow: 6px 6px 3px #ccc;
+    -moz-box-shadow: 6px 6px 3px #ccc;
 }
 
 /* for toggle behavior */
