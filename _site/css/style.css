@@ -124,7 +124,7 @@ background-image: url("https://www.transparenttextures.com/patterns/grunge-wall.
 
 @media (min-width: 320px) and (max-width: 767px) {
 	aside nav ul li a {
-		font-size: 160%;
+		font-size: 150%;
 		color: rgba(255,255,255, .8) !important;
 	}
 
@@ -187,7 +187,7 @@ background-image: url("https://www.transparenttextures.com/patterns/grunge-wall.
 	}
 
 	body, html {
-		font-size: 12px !important;
+		font-size: 11px !important;
 	}
 
 	.larger {
@@ -242,7 +242,7 @@ background-image: url("https://www.transparenttextures.com/patterns/grunge-wall.
 	}
 
 	aside nav ul li a {
-		font-size: 250%;
+		font-size: 230%;
 		color: rgba(255,255,255, .8) !important;
 	}
 
