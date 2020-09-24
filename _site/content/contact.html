@@ -1,93 +1,110 @@
-    <h2 class="display-4 ">Contact</h2>
+    <h1 class="display-2 header ">Contact</h1>
 
     <div class="container-fluid">
         <!--Section: Contact v.2-->
         <section class="mb-4">
 
             <!--Section heading-->
-            <h2 class="h1-responsive text-center my-4 title">Contact me</h2>
-            <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Let's work together!</p>
+            <h2 class="h1-responsive text-center my-4 title">Do you have any questions? Let's work together!</h2>
 
             <div class="row">
 
                 <!--Grid column-->
-                <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="https://getform.io/f/44914158-46cd-4a51-ba3b-87035e19b4e1" method="POST">
+                <div class="col-lg-12 mb-md-0 mb-5">
+                    <form id="contact-form" method="post" action="https://formspree.io/meqpqnwv" role="form">
 
-                        <!--Grid row-->
-                        <div class="row">
+                        <div class="messages"></div>
 
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="name" name="name" class="form-control">
-                                    <label for="name" class="">Your name</label>
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Firstname *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Lastname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="email" id="email" name="email" class="form-control">
-                                    <label for="email" class="">Your email</label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_need">Please specify your need *</label>
+                                        <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                            <option value=""></option>
+                                            <option value="Music">Music & Art</option>
+                                            <option value="Colab">Request order status</option>
+                                            <option value="Business proposal">Business</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <!--Grid column-->
-
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted">
+                                        <strong>*</strong> These fields are required.</p>
+                                </div>
+                            </div>
                         </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="subject" name="subject" class="form-control">
-                                    <label for="subject" class="">Subject</label>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-
-                                <div class="md-form">
-                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                    <label for="message">Your message</label>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--Grid row-->
 
                     </form>
 
-                    <div class="text-center text-md-left">
-                        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-                    </div>
                     <div class="status"></div>
                 </div>
                 <!--Grid column-->
 
+            </div>
+            <div class="row">
                 <!--Grid column-->
-                <div class="col-md-3 text-center">
+                <div class="col-12 text-center">
                     <ul class="list-unstyled mb-0">
-                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p>Spain, Madrid</p>
+                            <h2 class="display-4">Spain, Madrid</h2>
                         </li>
 
-                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                            <p>jmpoficial@gmail.com </p>
+                        <li><i class="fa fa-envelope mt-4 mb-4 fa-4x"></i>
+                            <h2 class="display-5">jmpoficial@gmail.com </h2>
                         </li>
                     </ul>
                 </div>
                 <!--Grid column-->
+            </div>
 
+            <div class="row">
+                <div class="col-12 text-center">
+                    <ul class="flex-lg-column flex-row navbar-nav w-100 z   social-network social-circle-big mt-5">
+                        <li class="p-3"><a href="http://www.instagram.com/jorgemadridportillo" target="_blank" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li class="p-3"><a href="https://www.youtube.com/channel/UCouc1sbK0C06k9jERqyAEgA?view_as=subscriber" class="icoYoutube" target="_blank" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                        <li class="p-3"><a href="#" class="icoLinkedin" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
             </div>
 
         </section>

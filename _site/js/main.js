@@ -75,7 +75,7 @@ $(function() {
 
     var page = window.location.hash.substring(1);
     if(page == '') {
-        page = 'portfolio';
+        page = 'main';
         window.location.hash = '#portfolio';
 	}
     $.get('../content/' + page + '.html', loaded);   

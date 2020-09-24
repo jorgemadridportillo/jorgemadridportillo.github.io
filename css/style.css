@@ -10,14 +10,21 @@
 body, html {
     height: 100%;
 	font-family: 'Nanum Gothic', sans-serif;
+	
 }
 
 .main {
 	color: rgba(255,255,255) !important;
 }
 
+
+
 @media (min-width: 992px) {
 
+	boyd, html {
+		font-size: 16px;
+	}
+	
 	aside nav {
 		margin-top: 100%;
 		margin-left: 10px;
@@ -68,11 +75,36 @@ body, html {
 		line-height:50px;
 		text-align: center;
 	}
+
+	.larger {
+		font-size: 140%;
+	}
+
+	.player-holder{
+	   height: 400px;
+	   width: 400px
+	   max-width:650px;
+	   text-align: center;
+	}
+	.player-thumb{
+	   width: 400px;
+	   height: 400px;
+	   display: inline-block;
+	   border-radius: 50%;
+	   background-image: url('../img/main.jpg');
+	   background-size: cover;
+	   background-position: center;
+	}
+
+	.header {
+		border-bottom: 1px solid rgb(184,184,184, 0.7);
+		margin-bottom: 30px !important;
+	}
 }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
 	aside nav ul li a {
-		font-size: 130%;
+		font-size: 160%;
 		color: rgba(255,255,255, .8) !important;
 	}
 
@@ -89,11 +121,22 @@ body, html {
 		color: rgba(255,255,255, .99) !important;
 	}
 
+	h1 {
+		font-size: 5rem !important;
+	}
+
 	aside {
 		background-image:url('../img/navbar_2.jpg');
 		background-repeat:no-repeat;
 		background-position:center;
 		background-size: 150%;
+
+		-webkit-box-shadow: 0px 8px 5px -4px rgba(0,0,0,0.65);
+		-moz-box-shadow: 0px 8px 5px -4px rgba(0,0,0,0.65);
+		box-shadow: 0px 8px 5px -4px rgba(0,0,0,0.65);
+		padding-bottom: 10px !important;
+
+		padding-left: 0px !important
 	}
 
 	.social-circle li a {
@@ -115,15 +158,52 @@ body, html {
 		text-align: center;
 	}
 
-		body {
+	body {
 		padding-top: 125px;
-	  }
+	}
+
+	body, html {
+		font-size: 12px !important;
+	}
+
+	.larger {
+		font-size: 120%;
+	}
+
+	.player-holder{
+	   height: 250px;
+	   width: 250px
+	   max-width:250px;
+	   text-align: center;
+	}
+	.player-thumb{
+	   width: 250px;
+	   height: 250px;
+	   display: inline-block;
+	   border-radius: 50%;
+	   background-image: url('../img/main.jpg');
+	   background-size: cover;
+	   background-position: center;
+	}
+	
+	.header {
+		border-bottom: 1px solid rgb(184,184,184, 0.7);
+		margin-bottom: 20px !important;
+	}
 }
 
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
 	body {
 		padding-top: 175px;
+	}
+
+	body, html {
+		font-size: 16px !important;
+	}
+
+	h1 {
+		font-size: 7rem !important;
 	}
 
 	aside nav ul li a {
@@ -154,6 +234,8 @@ body, html {
 		-moz-box-shadow: 0px 8px 5px -4px rgba(0,0,0,0.65);
 		box-shadow: 0px 8px 5px -4px rgba(0,0,0,0.65);
 		padding-bottom: 10px !important;
+
+		padding-left: 0px !important
 	}
 
 	.social-circle li a {
@@ -175,13 +257,38 @@ body, html {
 		line-height: 60px;
 		text-align: center;
 	}
+
+	.larger {
+		font-size: 140%;
+	}
+
+	.player-holder{
+	   height: 350px;
+	   width: 350px
+	   max-width:250px;
+	   text-align: center;
+	}
+	.player-thumb{
+	   width: 350px;
+	   height: 350px;
+	   display: inline-block;
+	   border-radius: 50%;
+	   background-image: url('../img/main.jpg');
+	   background-size: cover;
+	   background-position: center;
+	}
+
+	.header {
+		border-bottom: 1px solid rgb(184,184,184, 0.7);
+		margin-bottom: 20px !important;
+	}
 }
 
 .video {
     width: 100%;
     height: 60%;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .video-responsive {
@@ -190,14 +297,15 @@ body, html {
     padding-bottom: 56.25%;
     /*padding-top: 30px;*/
     position: relative;
-    }
+	
+}
 .video-responsive iframe, .video-responsive object, .video-responsive embed {
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
-    }
+}
 
 
 .title {
@@ -216,7 +324,7 @@ body, html {
 .img-grid {
     max-width: 100%;
 	width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     cursor: pointer;
 }
 
@@ -238,6 +346,26 @@ body, html {
 * ==========================================
 *
 */
+
+.social-circle-big li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 120px;
+	height: 120px;
+	font-size:80px;
+	background-color: #D3D3D3;
+}
+
+.social-circle-big li i {
+	margin:0;
+	line-height: 60px;
+	text-align: center;
+}
 
 body {
   //background: #599fd9;
@@ -322,3 +450,13 @@ a.socialIcon:hover, .socialHoverClass {
 	-ms-transition: all 0.8s;
 	transition: all 0.8s;
 }
+
+.social-circle-big i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
