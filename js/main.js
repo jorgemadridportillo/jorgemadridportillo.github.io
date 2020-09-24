@@ -76,7 +76,7 @@ $(function() {
     var page = window.location.hash.substring(1);
     if(page == '') {
         page = 'main';
-        window.location.hash = '#portfolio';
+        window.location.hash = '#main';
 	}
     $.get('../content/' + page + '.html', loaded);   
 });
