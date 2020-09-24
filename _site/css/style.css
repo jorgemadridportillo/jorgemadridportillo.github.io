@@ -100,6 +100,15 @@ body, html {
 		border-bottom: 1px solid rgb(184,184,184, 0.7);
 		margin-bottom: 30px !important;
 	}
+
+	.main-small {
+		display: none !important;
+	}
+
+	.main-small:hover {
+		text-decoration: underline;
+		color: white;
+	}
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -189,6 +198,17 @@ body, html {
 	.header {
 		border-bottom: 1px solid rgb(184,184,184, 0.7);
 		margin-bottom: 20px !important;
+	}
+
+	.main-small {
+		width: 100%;
+		color: white;
+		font-size: 120%;
+	}
+
+	.main-small:hover {
+		text-decoration: underline;
+		color: white;
 	}
 }
 
@@ -281,6 +301,17 @@ body, html {
 	.header {
 		border-bottom: 1px solid rgb(184,184,184, 0.7);
 		margin-bottom: 20px !important;
+	}
+
+	.main-small {
+		width: 100%;
+		color: white;
+		font-size: 170%;
+	}
+
+	.main-small:hover {
+		text-decoration: underline;
+		color: white;
 	}
 }
 
@@ -459,4 +490,3 @@ a.socialIcon:hover, .socialHoverClass {
 	-ms-transition: all 0.8s;
 	transition: all 0.8s;
 }
-
